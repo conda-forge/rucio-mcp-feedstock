@@ -25,6 +25,7 @@ requirements:
     - python ${{ python_min }}.*
     - pip
     - hatchling >=0.7
+    - hatch-vcs
   run:
     - python >=${{ python_min }}
     - rucio-clients >=35.0.0
