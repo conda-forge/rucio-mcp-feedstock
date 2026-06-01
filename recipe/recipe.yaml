@@ -30,6 +30,7 @@ requirements:
     - python >=${{ python_min }}
     - rucio-clients >=35.0.0
     - mcp >=1.0
+    - prometheus_client >=0.20
     - ca-policy-lcg  # for cert
     - voms # for voms-client
     - voms-lsc # for voms-certs
