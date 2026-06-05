@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.4.2"
+  version: "0.4.3"
   python_min: "3.10"
 
 package:
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/r/rucio_mcp/rucio_mcp-${{ version }}.tar.gz
-  sha256: 9ea364cc2d084ec34afde908813ec8dccf17ad5e156abcabe15eb01b3a85f38d
+  sha256: 2f36c949d6539a59e86ade6b25f27676ef1d85bbd39e967a30c0df804a39b52e
 
 build:
   number: 0
