@@ -12,7 +12,7 @@ source:
   sha256: 9708f09c4b5c7622a6685db7256e01df8b5eb67974ef4b6e5669c112de35348b
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   python:
@@ -35,7 +35,7 @@ requirements:
     - voms # for voms-client
     - voms-lsc # for voms-certs
     - __unix  # see https://github.com/rucio/rucio/issues/8461?reload=1
-    - af-credentials >=0.1.1
+    - af-credentials >=0.2.0
 
 tests:
   - python:
