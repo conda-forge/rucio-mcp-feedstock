@@ -12,7 +12,7 @@ source:
   sha256: f5cfee938b8f4fa96b0a10fcd26337451cbd764fc6578736b73a7ea7cd0141bb
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   python:
@@ -31,11 +31,14 @@ requirements:
     - httpx2 >=2.0.0
     - mcp >=2.0.0,<3
     - prometheus_client >=0.20
+    - pydantic >=2.11
+    - starlette >=0.27
+    - uvicorn >=0.31.1
     - ca-policy-lcg  # for cert
     - voms # for voms-client
     - voms-lsc # for voms-certs
     - __unix  # see https://github.com/rucio/rucio/issues/8461?reload=1
-    - af-credentials >=0.2.0
+    - af-credentials >=0.4.0
 
 tests:
   - python:
